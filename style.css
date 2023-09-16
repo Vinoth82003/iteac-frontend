@@ -316,3 +316,100 @@ border-radius: 50%;
         display: block;
     }
 }
+
+
+@media screen and (max-width:425px) {
+    .signin-form-box{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        opacity: 0;
+    }
+    
+    .signin-form-box.active{
+        width: 300px;
+        height: 300px;
+        background-image: url('/frames/login-frame.png');
+        background-size: 100%;
+        /* border: 2px solid #ffffff; */
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation:  active .5s ease-in forwards;
+    }
+    
+    .signin-form-box.done{
+        width: 300px;
+        height: 400px;
+        background-image: url('/frames/login-frame.png');
+        background-size: 100%;
+        /* border: 2px solid #ffffff; */
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation:  done .5s ease-in forwards;
+    }
+    
+    .signup-form-box{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        opacity: 0;
+    }
+    
+    .signup-form-box.active{
+        width: 300px;
+        height: 500px;
+        background-image: url('/frames/register-frame.png');
+        background-size: 100% 100%;
+        /* border: 2px solid #ffffff; */
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation:  active .5s ease-in forwards;
+    }
+    
+    .signup-form-box.done{
+        width: 300px;
+        height: 500px;
+        background-image: url('/frames/register-frame.png');
+        background-size: 100% 100%;
+        /* border: 2px solid #ffffff; */
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation:  done .5s ease-in forwards;
+    }
+    
+    @keyframes active {
+        0%{
+            left: 0;
+            opacity: 0;
+        }100%{
+            left: 20px;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes done {
+        0%{
+            top: 200px;
+            opacity: 1;
+        }100%{
+            top: 400px;
+            opacity: 0;
+        }
+    }
+}
