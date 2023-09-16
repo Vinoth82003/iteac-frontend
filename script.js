@@ -30,13 +30,25 @@ signin_btn.forEach(signin => {
     })
 });
 
-let errorMsg = document.querySelector(".error");
+// let errorMsg = document.querySelector(".error");
 
-const closeBtn = document.querySelector(".closeBtn");
+// const closeBtn = document.querySelector(".closeBtn");
 
-closeBtn.addEventListener("click",function(){
-    errorMsg.classList.add("done")
-    setTimeout(() => {
-        errorMsg.remove();
-    }, 500);
-})
+// closeBtn.addEventListener("click",function(){
+//     errorMsg.classList.add("done")
+//     setTimeout(() => {
+//         errorMsg.remove();
+//     }, 500);
+// });
+
+const menu = document.querySelectorAll('.menu-item');
+
+menu.forEach(link => {
+    console.log('list');
+    link.addEventListener("click",function(){
+        menu.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        link.classList.add("active");
+    })
+});

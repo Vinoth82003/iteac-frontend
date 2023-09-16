@@ -59,15 +59,23 @@ border-radius: 50%;
 
 .menu-item {
     margin: 0 10px;
+    padding: 7px 14px ;
+    transition: all .5s;
 }
 
 .menu-link {
     text-decoration: none;
     color: #ffffff;
+
 }
 
 .menu-icon {
     margin-right: 5px;
+}
+
+.menu-item.active{
+    background: #08601f;
+    border-radius: 4px;
 }
 
 .signin-form-box{
