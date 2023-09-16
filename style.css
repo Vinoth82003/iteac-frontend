@@ -5,8 +5,8 @@
 .homepage{
     width: 100vw;
     height: 100vh;
-    background: #040404;
-    background-image: url('/backgrounds/bg_without_logo.png');
+    background: #201f1f;
+    background-image: url('/backgrounds/4.png');
     background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
