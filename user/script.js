@@ -19,3 +19,20 @@ list.forEach(opt => {
         opt.classList.add('active');
     })
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const usernameBtn = document.querySelector(".username-btn");
+//     const dropdownMenu = usernameBtn.querySelector(".dropdown-menu");
+
+//     usernameBtn.addEventListener("click", function (e) {
+//         e.stopPropagation(); // Prevent the document click event from immediately closing the dropdown
+//         dropdownMenu.classList.toggle("show-dropdown");
+//     });
+
+//     // Close the dropdown when clicking anywhere outside of it
+//     document.addEventListener("click", function (e) {
+//         if (!usernameBtn.contains(e.target)) {
+//             dropdownMenu.classList.remove("show-dropdown");
+//         }
+//     });
+// });

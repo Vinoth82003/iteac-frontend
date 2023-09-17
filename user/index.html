@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="testpage">
         <div class="main">
-            <nav class="navbar"></nav>
+            <nav class="custom-navbar">
+                <div class="container">
+                    <a class="navbar-logo" href="#">
+                        <img src="/logos/iteac_logo.png" alt="iteac_logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" id="navbar-toggler">
+                        <span class="navbar-toggler-icon fas fa-bars"></span>
+                    </button>
+                    <ul class="navbar-menu" id="navbar-menu">
+                        <li class="menu-item username">
+                            <i class="menu-icon fas fa-user"></i> <!-- Profile icon -->
+                            <span class="menu-text">username</span>
+                            <i class="menu-icon fas fa-caret-down"></i>
+                            <ul class="dropdownOptions">
+                                <li class="dropdownList">
+                                    <a>
+                                        <i class="fas fa-user-circle"></i>
+                                        <span>profile</span>
+                                    </a>
+                                </li>
+                                <li class="dropdownList">
+                                   <a href="../">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span>logout</span>
+                                   </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="innermain">
                 <div class="sidemenu active">
                     <div class="menuopen">X</div>
