@@ -52,3 +52,11 @@ menu.forEach(link => {
         link.classList.add("active");
     })
 });
+
+const submit = document.querySelectorAll('.submit');
+
+submit.forEach(btn => {
+    btn.addEventListener('click',function(){
+        window.location.href = 'user/';
+    })
+});
